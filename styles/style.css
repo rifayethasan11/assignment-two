@@ -10,6 +10,72 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-h1 {
-    font-size: 15px;
+.navbar {
+    min-height: 700px;
+    border: 1px solid gray;
+    background-image: linear-gradient(180deg,rgb(0, 0, 0), rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 1));
 }
+
+.nav-title {
+    color: rgb(230, 83, 60);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;    
+}
+
+.nav-icon {
+    display: none;
+}
+
+
+.nav-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.7rem;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    border-radius: 5rem;
+    font-weight: normal;
+}
+
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 5rem;
+}
+
+.nav-container ul li.nav-child a {
+    background-color: #FF5C41;
+    color: #fff;
+}
+
+
+
+/* responsive layout for mobile starts here */
+@media screen and (max-width:576px) {
+    .nav-content {
+        display: none;
+    }
+    .nav-icon {
+        display: block;
+        color: white;
+        font-size: 2rem;
+    }
+    
+
+
+
+}
+
+
+
+/* responsive layout for mobile ends here */
