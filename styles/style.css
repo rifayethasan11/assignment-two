@@ -433,6 +433,83 @@ body {
 
 
 /* team section styles ends here team */
+/* unique section styles starts here team */
+.unique-container {
+    min-height: 800px;
+    max-width: 100%;
+    background-color: rgba(230, 83, 60, 0.356);
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+}
+
+.unique-title h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff3300, #fa9547, #ffc08f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 .5mm 1mm rgb(255, 125, 19));
+    text-align: center;
+}
+.unique-title p {
+    font-size: 1rem; 
+    font-weight: 500;
+    background: linear-gradient(to right, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.unique-content {
+    width: 35%;
+    min-height: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgb(124, 124, 124) , rgb(22, 19, 19));
+    border-radius: 15px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 0);
+}
+    
+.unique-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.unique-content img {
+    min-width: 100%;
+}
+.unique-content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+}
+.unique-content p {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+.unique-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.unique-btn button{
+    background-image: linear-gradient(to bottom, rgb(255, 209, 125) , rgb(255, 81, 0));
+    border: 1px solid snow;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    box-shadow: 1px 2px 10px rgb(172, 172, 172);
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+/* unique section styles ends here team */
 /* footer section styles starts here team */
 .footer-container {
     min-height: 400px;
@@ -629,6 +706,35 @@ body {
         width: 80%;
         margin-top: 15px;
     }
+    .unique-content-container {
+        flex-direction: column;
+    }
+    .unique-container {
+        width: 100%;
+    }
+    
+    .unique-title h1 {
+        font-size: 2rem;
+    }
+    .unique-title p {
+        font-size: 1rem;
+    }
+    
+    .unique-content {
+        width: 90%;
+        min-height: 100%;
+        padding: 15px;
+        margin-top: 30px;
+    }
+        
+    .unique-content-container {
+        width: 100%;
+    }
+    
+    .unique-content img {
+        width: 100%;
+    }
+   
 }
 
 /* responsive layout for mobile ends here */
